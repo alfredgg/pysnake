@@ -6,6 +6,7 @@ import pysnake
 
 class SnakeGame(pysnake.Game):
     def __init__(self):
+        pysnake.Game.__init__(self)
         self.snake = pysnake.Snake(self)
         self.food = pysnake.Food(self)
 

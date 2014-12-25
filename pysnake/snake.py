@@ -9,6 +9,7 @@ class Snake(object):
         self.color = (0, 255, 0)
         self.direction = pysnake.MOVE_STOP
         self.game = game
+        self.stop = False
 
     def initialize(self):
         self.body = [None]
